@@ -97,7 +97,7 @@ textarea{resize:none;overflow:hidden;min-height:72px}
 <div class="feedback"><label>Sobre la calidad de la escritura</label><textarea rows="4"></textarea></div>
 <div class="feedback"><label>Otras observaciones y comentarios</label><textarea rows="4"></textarea></div>
 <h2 class="section-title">Rúbrica y puntajes obtenidos</h2>
-<div class="note">Para cada criterio, revise los cuatro descriptores y seleccione un puntaje de 1,0 a 7,0. El nivel de logro se determina automáticamente según la escala: destacado (6,0–7,0), adecuado (5,0–5,5), parcial (4,0–4,5) e insuficiente (1,0–3,5). En el PDF se mostrará únicamente el descriptor correspondiente al nivel alcanzado.</div>
+<div class="note">Para cada criterio, revise los cuatro descriptores y seleccione un puntaje de 0,0 a 4,0, en incrementos de 0,5. Los niveles de logro son: destacado (4,0), adecuado (3,0–3,5), parcial (2,0–2,5) e insuficiente (0,0–1,5). La calificación final se expresa de 1,0 a 7,0 con un 60% de exigencia (2,4 de 4,0 puntos equivale a nota 4,0). En el PDF se mostrará únicamente el descriptor correspondiente al nivel alcanzado.</div>
 
     <section class="indicator" data-indicator="0" data-weight="15">
       <div class="indicator-head">
@@ -118,24 +118,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-0">Puntaje</label>
               <select class="score" id="score-0" data-ind="0" data-criterion="0" aria-label="Puntaje de Delimitación del objeto de estudio">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Delimita con precisión un objeto de estudio pertinente al campo de la lengua y/o la literatura. Define con claridad el fenómeno, contexto, corpus, participantes u otras dimensiones relevantes, según corresponda, y establece límites que permiten desarrollar una investigación viable y focalizada.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Delimita un objeto de estudio pertinente y suficientemente claro. Define sus principales componentes y límites, aunque algunos aspectos podrían requerir mayor precisión.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Presenta un objeto de estudio reconocible, pero su delimitación es amplia, imprecisa o poco consistente. Algunos de sus componentes centrales no se encuentran suficientemente definidos.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">El objeto de estudio resulta confuso, excesivamente amplio o escasamente pertinente. No presenta una delimitación que permita orientar adecuadamente la investigación.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Delimita con precisión un objeto de estudio pertinente al campo de la lengua y/o la literatura. Define con claridad el fenómeno, contexto, corpus, participantes u otras dimensiones relevantes, según corresponda, y establece límites que permiten desarrollar una investigación viable y focalizada.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Delimita un objeto de estudio pertinente y suficientemente claro. Define sus principales componentes y límites, aunque algunos aspectos podrían requerir mayor precisión.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Presenta un objeto de estudio reconocible, pero su delimitación es amplia, imprecisa o poco consistente. Algunos de sus componentes centrales no se encuentran suficientemente definidos.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">El objeto de estudio resulta confuso, excesivamente amplio o escasamente pertinente. No presenta una delimitación que permita orientar adecuadamente la investigación.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -161,24 +155,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-1">Puntaje</label>
               <select class="score" id="score-1" data-ind="0" data-criterion="1" aria-label="Puntaje de Antecedentes y formulación del problema">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Selecciona, organiza y analiza críticamente antecedentes teóricos y empíricos pertinentes y actualizados. A partir de ellos, construye un problema de investigación claro, relevante y sólidamente fundamentado, identifica vacíos, tensiones o aspectos no resueltos y justifica de manera convincente la necesidad del estudio.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Presenta antecedentes pertinentes y suficientes para contextualizar el objeto de estudio y fundamentar un problema de investigación claro. La relación entre los antecedentes y la necesidad del estudio es adecuada, aunque algunos aspectos podrían desarrollarse con mayor profundidad.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Presenta antecedentes relacionados con el tema, pero estos son limitados, poco articulados o predominantemente descriptivos. Formula un problema reconocible, aunque con debilidades de fundamentación, relevancia o conexión con los antecedentes.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">Los antecedentes son insuficientes, poco pertinentes o no permiten comprender adecuadamente el estado del problema. La formulación del problema es confusa, débilmente fundamentada o no justifica de manera suficiente la realización del estudio.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Selecciona, organiza y analiza críticamente antecedentes teóricos y empíricos pertinentes y actualizados. A partir de ellos, construye un problema de investigación claro, relevante y sólidamente fundamentado, identifica vacíos, tensiones o aspectos no resueltos y justifica de manera convincente la necesidad del estudio.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Presenta antecedentes pertinentes y suficientes para contextualizar el objeto de estudio y fundamentar un problema de investigación claro. La relación entre los antecedentes y la necesidad del estudio es adecuada, aunque algunos aspectos podrían desarrollarse con mayor profundidad.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Presenta antecedentes relacionados con el tema, pero estos son limitados, poco articulados o predominantemente descriptivos. Formula un problema reconocible, aunque con debilidades de fundamentación, relevancia o conexión con los antecedentes.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">Los antecedentes son insuficientes, poco pertinentes o no permiten comprender adecuadamente el estado del problema. La formulación del problema es confusa, débilmente fundamentada o no justifica de manera suficiente la realización del estudio.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -222,24 +210,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-2">Puntaje</label>
               <select class="score" id="score-2" data-ind="1" data-criterion="2" aria-label="Puntaje de Preguntas, objetivos o supuestos">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Formula preguntas, objetivos o premisas claras, precisas y plenamente coherentes con el problema de investigación. Existe una articulación consistente entre los distintos componentes y estos orientan de manera efectiva el desarrollo del estudio.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Formula preguntas, objetivos o premisas pertinentes y mayoritariamente coherentes con el problema. La articulación entre sus componentes es adecuada, aunque presenta aspectos menores que podrían precisarse.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Las preguntas, objetivos o premisas se relacionan con el problema, pero presentan imprecisiones, redundancias o dificultades de articulación que afectan parcialmente la orientación del estudio.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">Las preguntas, objetivos o premisas son confusas, poco pertinentes o inconsistentes con el problema de investigación y no permiten orientar adecuadamente el estudio.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Formula preguntas, objetivos o premisas claras, precisas y plenamente coherentes con el problema de investigación. Existe una articulación consistente entre los distintos componentes y estos orientan de manera efectiva el desarrollo del estudio.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Formula preguntas, objetivos o premisas pertinentes y mayoritariamente coherentes con el problema. La articulación entre sus componentes es adecuada, aunque presenta aspectos menores que podrían precisarse.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Las preguntas, objetivos o premisas se relacionan con el problema, pero presentan imprecisiones, redundancias o dificultades de articulación que afectan parcialmente la orientación del estudio.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">Las preguntas, objetivos o premisas son confusas, poco pertinentes o inconsistentes con el problema de investigación y no permiten orientar adecuadamente el estudio.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -265,24 +247,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-3">Puntaje</label>
               <select class="score" id="score-3" data-ind="1" data-criterion="3" aria-label="Puntaje de Fundamentación teórica">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Construye un marco teórico pertinente, actualizado y conceptualmente sólido. Selecciona y articula categorías, perspectivas y autores relevantes para el problema y los utiliza de manera consistente para fundamentar el análisis de la investigación.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Presenta fundamentos teóricos pertinentes y suficientes para abordar el problema. Define adecuadamente los principales conceptos y establece relaciones consistentes entre ellos, aunque algunos aspectos podrían desarrollarse con mayor profundidad.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Incluye conceptos y antecedentes teóricos pertinentes, pero presenta una articulación limitada, imprecisiones conceptuales o una relación débil entre el marco teórico y el problema de investigación.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">La fundamentación teórica es insuficiente, poco pertinente o conceptualmente inconsistente y no proporciona una base adecuada para el desarrollo de la investigación.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Construye un marco teórico pertinente, actualizado y conceptualmente sólido. Selecciona y articula categorías, perspectivas y autores relevantes para el problema y los utiliza de manera consistente para fundamentar el análisis de la investigación.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Presenta fundamentos teóricos pertinentes y suficientes para abordar el problema. Define adecuadamente los principales conceptos y establece relaciones consistentes entre ellos, aunque algunos aspectos podrían desarrollarse con mayor profundidad.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Incluye conceptos y antecedentes teóricos pertinentes, pero presenta una articulación limitada, imprecisiones conceptuales o una relación débil entre el marco teórico y el problema de investigación.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">La fundamentación teórica es insuficiente, poco pertinente o conceptualmente inconsistente y no proporciona una base adecuada para el desarrollo de la investigación.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -308,24 +284,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-4">Puntaje</label>
               <select class="score" id="score-4" data-ind="1" data-criterion="4" aria-label="Puntaje de Diseño metodológico">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Diseña una estrategia metodológica plenamente coherente con el problema, las preguntas u objetivos y los fundamentos teóricos. Justifica de manera sólida el enfoque, diseño, corpus o participantes, técnicas, instrumentos, procedimientos de producción y análisis de información y demás decisiones metodológicas pertinentes.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Propone un diseño metodológico coherente y pertinente para los propósitos del estudio. Justifica sus principales decisiones, aunque algunos procedimientos podrían requerir mayor precisión o desarrollo.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">El diseño metodológico permite abordar parcialmente el problema, pero presenta inconsistencias, decisiones insuficientemente justificadas o procedimientos poco precisos.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">El diseño metodológico no resulta adecuado para responder al problema de investigación o presenta inconsistencias relevantes que comprometen la viabilidad del estudio.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Diseña una estrategia metodológica plenamente coherente con el problema, las preguntas u objetivos y los fundamentos teóricos. Justifica de manera sólida el enfoque, diseño, corpus o participantes, técnicas, instrumentos, procedimientos de producción y análisis de información y demás decisiones metodológicas pertinentes.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Propone un diseño metodológico coherente y pertinente para los propósitos del estudio. Justifica sus principales decisiones, aunque algunos procedimientos podrían requerir mayor precisión o desarrollo.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">El diseño metodológico permite abordar parcialmente el problema, pero presenta inconsistencias, decisiones insuficientemente justificadas o procedimientos poco precisos.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">El diseño metodológico no resulta adecuado para responder al problema de investigación o presenta inconsistencias relevantes que comprometen la viabilidad del estudio.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -351,24 +321,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-5">Puntaje</label>
               <select class="score" id="score-5" data-ind="1" data-criterion="5" aria-label="Puntaje de Viabilidad y resguardos éticos">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Demuestra que el diseño es viable dentro de las condiciones de la investigación y anticipa de manera pertinente sus principales requerimientos y dificultades. Identifica y fundamenta los resguardos éticos necesarios para la producción, tratamiento, análisis y comunicación de la información.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Presenta un diseño viable y considera los principales resguardos éticos pertinentes al estudio, aunque algunos aspectos podrían explicitarse o fundamentarse con mayor precisión.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">La viabilidad del diseño presenta aspectos poco desarrollados o dificultades que no han sido suficientemente consideradas. Los resguardos éticos aparecen de manera general o incompleta.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">El diseño presenta problemas relevantes de viabilidad o no considera adecuadamente los resguardos éticos exigibles para la investigación.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Demuestra que el diseño es viable dentro de las condiciones de la investigación y anticipa de manera pertinente sus principales requerimientos y dificultades. Identifica y fundamenta los resguardos éticos necesarios para la producción, tratamiento, análisis y comunicación de la información.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Presenta un diseño viable y considera los principales resguardos éticos pertinentes al estudio, aunque algunos aspectos podrían explicitarse o fundamentarse con mayor precisión.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">La viabilidad del diseño presenta aspectos poco desarrollados o dificultades que no han sido suficientemente consideradas. Los resguardos éticos aparecen de manera general o incompleta.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">El diseño presenta problemas relevantes de viabilidad o no considera adecuadamente los resguardos éticos exigibles para la investigación.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -412,24 +376,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-6">Puntaje</label>
               <select class="score" id="score-6" data-ind="2" data-criterion="6" aria-label="Puntaje de Implementación del diseño metodológico">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Ejecuta de manera rigurosa y consistente los procedimientos definidos en el diseño metodológico. Las decisiones adoptadas durante el desarrollo del estudio mantienen coherencia con el problema, los objetivos y los fundamentos de la investigación y, cuando existen ajustes, estos se encuentran debidamente justificados.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Implementa adecuadamente los principales procedimientos metodológicos definidos. Mantiene una relación coherente con el diseño original, aunque presenta aspectos menores que podrían desarrollarse o justificarse con mayor precisión.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Implementa los procedimientos principales, pero presenta inconsistencias, omisiones o modificaciones insuficientemente justificadas que afectan parcialmente la calidad del estudio.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">La implementación presenta diferencias sustantivas respecto del diseño propuesto, procedimientos poco claros o errores que comprometen la consistencia de la investigación.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Ejecuta de manera rigurosa y consistente los procedimientos definidos en el diseño metodológico. Las decisiones adoptadas durante el desarrollo del estudio mantienen coherencia con el problema, los objetivos y los fundamentos de la investigación y, cuando existen ajustes, estos se encuentran debidamente justificados.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Implementa adecuadamente los principales procedimientos metodológicos definidos. Mantiene una relación coherente con el diseño original, aunque presenta aspectos menores que podrían desarrollarse o justificarse con mayor precisión.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Implementa los procedimientos principales, pero presenta inconsistencias, omisiones o modificaciones insuficientemente justificadas que afectan parcialmente la calidad del estudio.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">La implementación presenta diferencias sustantivas respecto del diseño propuesto, procedimientos poco claros o errores que comprometen la consistencia de la investigación.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -455,24 +413,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-7">Puntaje</label>
               <select class="score" id="score-7" data-ind="2" data-criterion="7" aria-label="Puntaje de Producción, organización y análisis de la información">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Produce, selecciona y organiza información pertinente y suficiente para los propósitos del estudio. Aplica de manera rigurosa, sistemática y consistente los procedimientos, categorías o criterios de análisis definidos.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Produce y organiza información pertinente y aplica adecuadamente los principales procedimientos de análisis. Se observan algunas oportunidades de mayor profundidad o sistematicidad.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">La información producida permite abordar parcialmente los objetivos, pero presenta limitaciones de suficiencia, organización o pertinencia. El análisis es irregular o aplica de manera inconsistente algunos de los procedimientos definidos.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">La información obtenida resulta insuficiente o poco pertinente, o los procedimientos de análisis presentan errores o inconsistencias que impiden responder adecuadamente a los objetivos de la investigación.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Produce, selecciona y organiza información pertinente y suficiente para los propósitos del estudio. Aplica de manera rigurosa, sistemática y consistente los procedimientos, categorías o criterios de análisis definidos.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Produce y organiza información pertinente y aplica adecuadamente los principales procedimientos de análisis. Se observan algunas oportunidades de mayor profundidad o sistematicidad.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">La información producida permite abordar parcialmente los objetivos, pero presenta limitaciones de suficiencia, organización o pertinencia. El análisis es irregular o aplica de manera inconsistente algunos de los procedimientos definidos.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">La información obtenida resulta insuficiente o poco pertinente, o los procedimientos de análisis presentan errores o inconsistencias que impiden responder adecuadamente a los objetivos de la investigación.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -498,24 +450,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-8">Puntaje</label>
               <select class="score" id="score-8" data-ind="2" data-criterion="8" aria-label="Puntaje de Presentación e interpretación de los resultados">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Presenta resultados claros, organizados y sólidamente respaldados por la evidencia del estudio. Los interpreta con profundidad y establece relaciones consistentes con las preguntas u objetivos, los fundamentos teóricos y los antecedentes relevantes.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Presenta resultados claros y pertinentes, respaldados por evidencia suficiente. Los interpreta de manera coherente y establece relaciones adecuadas con los objetivos y fundamentos del estudio.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Presenta resultados relacionados con los objetivos, pero con debilidades de organización, respaldo empírico o interpretación. Las relaciones con los fundamentos del estudio son generales o poco desarrolladas.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">Los resultados son poco claros, insuficientemente respaldados o no responden adecuadamente a los objetivos. La interpretación es escasa, inconsistente o se limita a describir la información obtenida.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Presenta resultados claros, organizados y sólidamente respaldados por la evidencia del estudio. Los interpreta con profundidad y establece relaciones consistentes con las preguntas u objetivos, los fundamentos teóricos y los antecedentes relevantes.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Presenta resultados claros y pertinentes, respaldados por evidencia suficiente. Los interpreta de manera coherente y establece relaciones adecuadas con los objetivos y fundamentos del estudio.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Presenta resultados relacionados con los objetivos, pero con debilidades de organización, respaldo empírico o interpretación. Las relaciones con los fundamentos del estudio son generales o poco desarrolladas.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">Los resultados son poco claros, insuficientemente respaldados o no responden adecuadamente a los objetivos. La interpretación es escasa, inconsistente o se limita a describir la información obtenida.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -541,24 +487,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-9">Puntaje</label>
               <select class="score" id="score-9" data-ind="2" data-criterion="9" aria-label="Puntaje de Discusión y conclusiones">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Discute críticamente los resultados y establece relaciones significativas con los antecedentes y fundamentos de la investigación. Formula conclusiones plenamente coherentes con los hallazgos y los objetivos y reconoce de manera fundada los alcances, limitaciones y posibles proyecciones del estudio.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Discute los principales resultados y los relaciona adecuadamente con los fundamentos y antecedentes del estudio. Formula conclusiones coherentes y reconoce sus principales alcances y limitaciones.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">La discusión presenta relaciones limitadas con los antecedentes o fundamentos teóricos. Las conclusiones responden solo parcialmente a los resultados y los alcances o limitaciones reciben un tratamiento general.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">La discusión es escasa o no establece relaciones pertinentes con los antecedentes y fundamentos del estudio. Las conclusiones no se desprenden adecuadamente de los resultados o exceden la evidencia producida.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Discute críticamente los resultados y establece relaciones significativas con los antecedentes y fundamentos de la investigación. Formula conclusiones plenamente coherentes con los hallazgos y los objetivos y reconoce de manera fundada los alcances, limitaciones y posibles proyecciones del estudio.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Discute los principales resultados y los relaciona adecuadamente con los fundamentos y antecedentes del estudio. Formula conclusiones coherentes y reconoce sus principales alcances y limitaciones.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">La discusión presenta relaciones limitadas con los antecedentes o fundamentos teóricos. Las conclusiones responden solo parcialmente a los resultados y los alcances o limitaciones reciben un tratamiento general.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">La discusión es escasa o no establece relaciones pertinentes con los antecedentes y fundamentos del estudio. Las conclusiones no se desprenden adecuadamente de los resultados o exceden la evidencia producida.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -602,24 +542,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-10">Puntaje</label>
               <select class="score" id="score-10" data-ind="3" data-criterion="10" aria-label="Puntaje de Coherencia y desarrollo argumentativo">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Desarrolla las ideas de manera clara, lógica y consistente. Establece relaciones pertinentes entre afirmaciones, fundamentos, evidencias e interpretaciones, y construye una línea argumentativa reconocible y sostenida a lo largo del informe.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Desarrolla las ideas de manera clara y mayoritariamente coherente. Establece relaciones adecuadas entre los principales planteamientos y sus fundamentos, aunque algunos pasajes podrían requerir mayor desarrollo o articulación.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">El desarrollo de las ideas es comprensible, pero presenta saltos argumentativos, relaciones poco explícitas o afirmaciones insuficientemente fundamentadas que afectan parcialmente la coherencia del texto.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">El desarrollo argumentativo presenta contradicciones, relaciones débiles entre ideas o ausencia de fundamentación suficiente, lo que dificulta seguir la lógica global del informe.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Desarrolla las ideas de manera clara, lógica y consistente. Establece relaciones pertinentes entre afirmaciones, fundamentos, evidencias e interpretaciones, y construye una línea argumentativa reconocible y sostenida a lo largo del informe.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Desarrolla las ideas de manera clara y mayoritariamente coherente. Establece relaciones adecuadas entre los principales planteamientos y sus fundamentos, aunque algunos pasajes podrían requerir mayor desarrollo o articulación.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">El desarrollo de las ideas es comprensible, pero presenta saltos argumentativos, relaciones poco explícitas o afirmaciones insuficientemente fundamentadas que afectan parcialmente la coherencia del texto.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">El desarrollo argumentativo presenta contradicciones, relaciones débiles entre ideas o ausencia de fundamentación suficiente, lo que dificulta seguir la lógica global del informe.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -645,24 +579,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-11">Puntaje</label>
               <select class="score" id="score-11" data-ind="3" data-criterion="11" aria-label="Puntaje de Citación e integración de fuentes">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Integra las fuentes de manera pertinente y funcional al desarrollo de sus ideas, distingue con claridad el discurso propio del ajeno y utiliza adecuadamente citas directas y paráfrasis. Aplica de manera consistente el sistema de citación y referenciación APA y mantiene plena correspondencia entre las fuentes citadas en el texto y la lista de referencias.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Integra adecuadamente las fuentes y distingue el discurso propio del ajeno. Aplica de manera mayoritariamente correcta el sistema de citación y referenciación APA, con errores menores que no dificultan la identificación de las fuentes.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Integra las fuentes de manera poco articulada con el discurso propio o presenta dificultades recurrentes en el uso de citas y paráfrasis. El sistema de citación y referenciación presenta inconsistencias, aunque las fuentes utilizadas pueden identificarse.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">Presenta dificultades importantes para integrar o atribuir las fuentes utilizadas. Los errores de citación o referenciación impiden distinguir con claridad el origen de algunas ideas o dificultan significativamente la identificación de las fuentes.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Integra las fuentes de manera pertinente y funcional al desarrollo de sus ideas, distingue con claridad el discurso propio del ajeno y utiliza adecuadamente citas directas y paráfrasis. Aplica de manera consistente el sistema de citación y referenciación APA y mantiene plena correspondencia entre las fuentes citadas en el texto y la lista de referencias.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Integra adecuadamente las fuentes y distingue el discurso propio del ajeno. Aplica de manera mayoritariamente correcta el sistema de citación y referenciación APA, con errores menores que no dificultan la identificación de las fuentes.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Integra las fuentes de manera poco articulada con el discurso propio o presenta dificultades recurrentes en el uso de citas y paráfrasis. El sistema de citación y referenciación presenta inconsistencias, aunque las fuentes utilizadas pueden identificarse.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">Presenta dificultades importantes para integrar o atribuir las fuentes utilizadas. Los errores de citación o referenciación impiden distinguir con claridad el origen de algunas ideas o dificultan significativamente la identificación de las fuentes.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -688,24 +616,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-12">Puntaje</label>
               <select class="score" id="score-12" data-ind="3" data-criterion="12" aria-label="Puntaje de Corrección ortográfica y gramatical">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Presenta un dominio sólido de las normas ortográficas y gramaticales. Los errores son inexistentes o excepcionales y no afectan la calidad académica del escrito.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Presenta un manejo adecuado de las normas ortográficas y gramaticales. Los errores son menores y poco frecuentes y no afectan la comprensión del texto.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">Presenta errores ortográficos o gramaticales recurrentes que afectan parcialmente la fluidez, precisión o calidad académica del escrito.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">Presenta errores ortográficos o gramaticales frecuentes y significativos que dificultan la comprensión o afectan de manera importante la calidad formal del informe.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Presenta un dominio sólido de las normas ortográficas y gramaticales. Los errores son inexistentes o excepcionales y no afectan la calidad académica del escrito.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Presenta un manejo adecuado de las normas ortográficas y gramaticales. Los errores son menores y poco frecuentes y no afectan la comprensión del texto.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">Presenta errores ortográficos o gramaticales recurrentes que afectan parcialmente la fluidez, precisión o calidad académica del escrito.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">Presenta errores ortográficos o gramaticales frecuentes y significativos que dificultan la comprensión o afectan de manera importante la calidad formal del informe.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -731,24 +653,18 @@ textarea{resize:none;overflow:hidden;min-height:72px}
             <div class="criterion-choice">
               <label for="score-13">Puntaje</label>
               <select class="score" id="score-13" data-ind="3" data-criterion="13" aria-label="Puntaje de Registro académico y precisión conceptual">
-                <option value="">—</option>
-                <option value="1">1,0</option><option value="1.5">1,5</option>
-                <option value="2">2,0</option><option value="2.5">2,5</option>
-                <option value="3">3,0</option><option value="3.5">3,5</option>
-                <option value="4">4,0</option><option value="4.5">4,5</option>
-                <option value="5">5,0</option><option value="5.5">5,5</option>
-                <option value="6">6,0</option><option value="6.5">6,5</option>
-                <option value="7">7,0</option>
-              </select>
+                 <option value="">—</option>
+                 <option value="0">0,0</option><option value="0,5">0,5</option><option value="1">1,0</option><option value="1,5">1,5</option><option value="2">2,0</option><option value="2,5">2,5</option><option value="3">3,0</option><option value="3,5">3,5</option><option value="4">4,0</option>
+               </select>
               <div class="current-level">Sin evaluar</div>
             </div>
           </div>
 
           <div class="levels-grid screen-rubric">
-            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">6,0 · 6,5 · 7,0</div><div class="level-text">Utiliza de manera consistente un registro académico formal, preciso y adecuado al género. Emplea terminología disciplinar y metodológica con propiedad, formula sus afirmaciones con el grado de certeza correspondiente y evita expresiones ambiguas, coloquiales o impropias del discurso académico.</div></div>
-            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">5,0 · 5,5</div><div class="level-text">Utiliza un registro académico apropiado y una terminología mayoritariamente precisa. Presenta algunas formulaciones mejorables, pero estas no afectan de manera significativa la claridad ni el rigor del informe.</div></div>
-            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">4,0 · 4,5</div><div class="level-text">El registro es solo parcialmente adecuado al género académico. Presenta imprecisiones terminológicas, formulaciones poco formales o usos lingüísticos que reducen la precisión del texto.</div></div>
-            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">1,0 · 1,5 · 2,0 · 2,5 · 3,0 · 3,5</div><div class="level-text">Utiliza de manera recurrente un registro inadecuado para un informe académico y presenta imprecisiones conceptuales o terminológicas que afectan la claridad y el rigor del escrito.</div></div>
+            <div class="level-card level-destacado"><div class="level-title">Logro destacado</div><div class="level-range">4,0</div><div class="level-text">Utiliza de manera consistente un registro académico formal, preciso y adecuado al género. Emplea terminología disciplinar y metodológica con propiedad, formula sus afirmaciones con el grado de certeza correspondiente y evita expresiones ambiguas, coloquiales o impropias del discurso académico.</div></div>
+            <div class="level-card level-adecuado"><div class="level-title">Logro adecuado</div><div class="level-range">3,0 · 3,5</div><div class="level-text">Utiliza un registro académico apropiado y una terminología mayoritariamente precisa. Presenta algunas formulaciones mejorables, pero estas no afectan de manera significativa la claridad ni el rigor del informe.</div></div>
+            <div class="level-card level-parcial"><div class="level-title">Logro parcial</div><div class="level-range">2,0 · 2,5</div><div class="level-text">El registro es solo parcialmente adecuado al género académico. Presenta imprecisiones terminológicas, formulaciones poco formales o usos lingüísticos que reducen la precisión del texto.</div></div>
+            <div class="level-card level-insuficiente"><div class="level-title">Logro insuficiente</div><div class="level-range">0,0 · 0,5 · 1,0 · 1,5</div><div class="level-text">Utiliza de manera recurrente un registro inadecuado para un informe académico y presenta imprecisiones conceptuales o terminológicas que afectan la claridad y el rigor del escrito.</div></div>
           </div>
 
           <div class="selected-descriptor export-only">
@@ -774,7 +690,7 @@ textarea{resize:none;overflow:hidden;min-height:72px}
     </section>
     
 <section class="final"><div class="final-grid"><div><span>Calificación final</span><strong id="final-grade">—</strong></div></div>
-<div class="formula">La calificación final corresponde al promedio ponderado de los cuatro indicadores: 4.3.1 = 15%, 4.3.2 = 25%, 4.3.3 = 40% y 8.3.2 = 20%.</div></section>
+<div class="formula">La calificación final convierte el puntaje ponderado (0 a 4 puntos) a la escala de notas de 1,0 a 7,0 con un 60% de exigencia (2,4 puntos = nota 4,0). Ponderaciones: 4.3.1 = 15%, 4.3.2 = 25%, 4.3.3 = 40% y 8.3.2 = 20%.</div></section>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
@@ -793,8 +709,13 @@ function eliminarEstudiante(btn){
 }
 function renumerarEstudiantes(){document.querySelectorAll('.student-name').forEach((el,i)=>el.placeholder=`Nombre del estudiante ${i+1}`)}
 function resizeTextareas(){document.querySelectorAll('textarea').forEach(t=>{t.style.height='auto';t.style.height=t.scrollHeight+'px';})}
-function nivelDesdePuntaje(v){if(v>=6)return['destacado','Logro destacado'];if(v>=5)return['adecuado','Logro adecuado'];if(v>=4)return['parcial','Logro parcial'];return['insuficiente','Logro insuficiente']}
+function nivelDesdePuntaje(v){if(v>=4)return['destacado','Logro destacado'];if(v>=3)return['adecuado','Logro adecuado'];if(v>=2)return['parcial','Logro parcial'];return['insuficiente','Logro insuficiente']}
 function formatoNota(n){return n.toFixed(1).replace('.',',')}
+// Escala de notas chilena: 0 puntos = 1,0; 60% de logro = 4,0; 100% = 7,0.
+function convertirPuntajeANota(puntos){
+ const proporcion=Math.max(0,Math.min(1,puntos/4));
+ return proporcion<=0.60 ? 1+3*(proporcion/0.60) : 4+3*((proporcion-0.60)/0.40);
+}
 function actualizarCriterio(select){
  const idx=Number(select.dataset.criterion),card=select.closest('.criterion-card');
  card.querySelectorAll('.level-card').forEach(x=>x.classList.remove('selected'));
@@ -813,7 +734,7 @@ function calcular(){
    const label=nivelDesdePuntaje(avg)[1].replace('Logro ','');document.getElementById('avg-'+i).textContent=formatoNota(avg);document.getElementById('level-ind-'+i).textContent=label;document.getElementById('weighted-'+i).textContent=weighted.toFixed(2).replace('.',',');
  });
  if(!completedAll){document.getElementById('final-grade').textContent='—';return;}
- document.getElementById('final-grade').textContent=formatoNota(total);
+ document.getElementById('final-grade').textContent=formatoNota(Math.round(convertirPuntajeANota(total)*10)/10);
 }
 function reemplazarCamposEnClon(clone){
  clone.querySelectorAll('textarea,input,select').forEach(el=>{
@@ -1143,7 +1064,7 @@ function descargarPDF(){
  y += 27;
 
  setText(7.5,'normal',muted);
- const note='La calificación final corresponde al promedio ponderado de los cuatro indicadores: 4.3.1 = 15%, 4.3.2 = 25%, 4.3.3 = 40% y 8.3.2 = 20%.';
+ const note='La calificación final convierte el puntaje ponderado (0 a 4 puntos) a la escala de notas de 1,0 a 7,0 con un 60% de exigencia (2,4 puntos = nota 4,0). Ponderaciones: 4.3.1 = 15%, 4.3.2 = 25%, 4.3.3 = 40% y 8.3.2 = 20%.';
  const noteLines=pdf.splitTextToSize(note, contentW);
  noteLines.forEach((lineTxt,li)=>{
    const isLast=li===noteLines.length-1;
